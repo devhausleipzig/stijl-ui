@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "dev": "storybook",
+    "build": "build-storybook",
+    "serve": "vite ./storybook-static --port 8080",
+    "preview": "yarn build && yarn serve",
+    "dev:old": "vite",
+    "build:old": "tsc && vite build",
+    "preview:old": "vite preview"
   },
   "dependencies": {
     "@stitches/react": "^1.2.7",
