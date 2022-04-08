@@ -7,6 +7,7 @@
     "build": "build-storybook",
     "serve": "vite ./storybook-static --port 8080",
     "preview": "yarn build && yarn serve",
+    "format": "prettier --write .",
     "dev:old": "vite",
     "build:old": "tsc && vite build",
     "preview:old": "vite preview"
@@ -31,6 +32,7 @@
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
     "babel-loader": "^8.2.4",
+    "prettier": "^2.6.2",
     "typescript": "^4.5.4",
     "vite": "^2.9.0"
   }
