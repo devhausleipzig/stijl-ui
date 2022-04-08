@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "dev": "storybook",
+    "dev": "yarn storybook",
     "build": "build-storybook",
     "serve": "vite ./storybook-static --port 8080",
     "preview": "yarn build && yarn serve",
